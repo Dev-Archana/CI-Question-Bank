@@ -1,10 +1,13 @@
-//platform : CodingBat -> Logic-1
-//Question Name: cigarParty
-
 public boolean cigarParty(int cigars, boolean isWeekend) {
-		 if((isWeekend&& cigars>=40)||(cigars>=40 && cigars<=60))
-		 return true;
-		 else
-		 return false;
-
+    if (isWeekend) {
+        return cigars >= 40; 
+    } else { // It's not the weekend
+        return cigars >= 40 && cigars <= 60;
+    }
 }
+
+/*
+    platform : CodingBat -> Logic-1
+    Question Name: cigarParty
+    Author : Archana
+*/
